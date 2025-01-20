@@ -1,0 +1,67 @@
+.container {
+    background-color: #282828;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 1rem;
+}
+
+/* nombreClase:pseudoclase [] */
+.caja {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    border-radius: 6px;
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja:hover {
+    background-color: rebeccapurple;
+    width: 200px;
+}
+
+
+.active {
+    background-color: red;
+    color: white;
+}
+
+.active:active {
+    color: greenyellow;
+    background-color: blue;
+}
+
+.visited:visited {
+    color: greenyellow;
+}
+
+.link:link {
+    color: yellow;
+}
+
+.link:visited {
+    color: blueviolet;
+}
+
+.focus-input {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+}
+
+.focus-input:focus {
+    border: 3px solid crimson;
+    outline: 2px solid blue;
+    border-radius: 2px;
+}
+
+/* FIRST CHILD */
+
+.first .caja:first-child{
+
+}
+
