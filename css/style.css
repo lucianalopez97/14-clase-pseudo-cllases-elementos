@@ -71,3 +71,11 @@
     background-color: greenyellow;
 }
 
+.type {
+    flex-direction: column;
+}
+
+.type h2:first-of-type {
+    color: blueviolet;
+}
+
