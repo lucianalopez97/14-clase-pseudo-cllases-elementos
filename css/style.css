@@ -36,7 +36,7 @@
 }
 
 .visited:visited {
-    color: greenyellow;
+    color: blue;
 }
 
 .link:link {
@@ -62,6 +62,12 @@
 /* FIRST CHILD */
 
 .first .caja:first-child{
+    background-color: transparent;
+    border: 1px solid crimson;
+}
 
+.last .caja:last-child {
+    color: black;
+    background-color: greenyellow;
 }
 
