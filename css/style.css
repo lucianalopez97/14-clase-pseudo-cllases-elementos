@@ -79,3 +79,44 @@
     color: blueviolet;
 }
 
+.nth-child-odd .caja:nth-child(odd){
+    background-color: gray;
+}
+
+table tr:nth-child(odd) {
+    background-color: green;
+}
+
+.nth-child-even .caja:nth-child(even) {
+    background-color: purple;
+}
+
+.nth-child-number .caja:nth-child(2) {
+    background-color: violet;
+}
+
+.nth-child-n .caja:nth-child(3n) {
+    background-color: fuchsia;
+}
+
+.nth-child-numberplusn .caja:nth-child(3n + 4) {
+    background-color: blueviolet;
+}
+
+.nth-of-type {
+    flex-direction: column;
+}
+
+.nth-of-type p:nth-of-type(-n+3){
+    background-color: red;
+}
+
+
+/* sellector :: pseudoelemento{} */
+.first-letter::first-letter {
+    color: crimson;
+    background-color: #000;
+    font-size: 2rem;
+}
+
+
