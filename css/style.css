@@ -116,7 +116,75 @@ table tr:nth-child(odd) {
 .first-letter::first-letter {
     color: crimson;
     background-color: #000;
+    font-size: 3rem;
+    padding: 10px;
+}
+
+.first-line::first-line {
+    background-color: red;
+}
+
+.input-placeholder::placeholder{
+    color: blue;
+    font-weight: 800;
+}
+
+/* Obligacion para que el before y el after funcionen
+Es darle la propiedad de 'content' */
+
+.before::before {
+    content: '🍕';
     font-size: 2rem;
 }
 
+.after::after {
+    content: '😎';
+    font-size: 2rem;
+}
 
+.lista li::marker {
+    content: '✅';
+}
+
+.contenedor {
+    height: 38vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #282828; */
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    border: 2px solid #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: all .3s;
+    position: relative;
+    transition: all .2s;
+    overflow: hidden;
+}
+
+.btn:hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    top: 0;
+    left: -100%;
+    transition: all .2s;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    left: 0;
+}
